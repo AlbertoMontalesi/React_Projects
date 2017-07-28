@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+
+
+html,
+body,
+#root,
+.color-container,
+.color {
+  height: 100%;
+  width: 100%;
+}
+
+.color {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transition: background-color 500ms linear;
+}
+
+p {
+  display: block;
+  font-size: 4rem;
+  margin: auto;
+  text-transform: uppercase;
+  
+}
+
