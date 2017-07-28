@@ -4,10 +4,10 @@ import './App.css';
 
 class Color extends Component {
 
-
-    handleClick(event) {
+    // must copy to clipboard
+    handleClick() {
     let text = document.querySelector("#color_code").innerHTML;
-    document.execCommand('copy');
+      document.execCommand('copy');
   }
 
   render() {
@@ -18,7 +18,7 @@ class Color extends Component {
       
       return (
         <div className='color' onClick={this.props.update.bind(this,this.props.index)} style={style}>
-          <p id="color_code" onClick={this.handleClick} >{this.props.hexCode}</p>
+          <p id="color_code" onClick={ () => this.handleClick() } >{this.props.hexCode}</p>
         </div>
       );
   }
